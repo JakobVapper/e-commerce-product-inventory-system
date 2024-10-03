@@ -24,6 +24,15 @@
         <input type="text" name="description" value="{{ $product->description }}">
         <label>Price:</label>
         <input type="text" name="price" value="{{ $product->price }}">
+        <label>Category:</label>
+        <select name="category_id">
+            <option value="">Select Category</option>
+            @foreach ($categories as $category)
+                <option value="{{ $category->id }}" {{ old('category_id', $product->category_id ?? '') == $category->id ? 'selected' : '' }}>
+                    {{ $category->name }}
+                </option>
+            @endforeach
+        </select>
         <label>Stock:</label>
         <input type="text" name="stock" value="{{ $product->stock }}">
         <label>Min Stock:</label>
