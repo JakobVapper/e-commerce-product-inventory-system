@@ -6,13 +6,13 @@
 </head> 
 
 <body> 
-    <h1>Dashboard</h1> 
+    <h1 class="justify-items-center text-5xl font-semibold">Dashboard</h1> 
     <div> 
-        <a href="{{ route('products.index') }}"> 
-            <button>Go to Products</button> 
+        <a class="w-[400px] h-[100px] text-center bg-emerald-400 hover:bg-emerald-200 text-white" href="{{ route('products.index') }}"> 
+            Products 
         </a> 
-        <a href="{{ route('categories.index') }}"> 
-            <button>Go to Categories</button> 
+        <a class="w-[400px] h-[100px] text-center bg-teal-400 hover:bg-teal-200 text-white" href="{{ route('categories.index') }}"> 
+            Categories 
         </a> 
     </div> 
 </body> 

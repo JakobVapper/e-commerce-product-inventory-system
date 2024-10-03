@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Categories</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
     <h1>Categories</h1>
