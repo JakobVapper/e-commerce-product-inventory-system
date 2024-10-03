@@ -20,7 +20,7 @@
         <label>Name:</label>
         <input type="text" name="name" value="{{ $product->name }}">
         <label>Description:</label>
-        <textarea name="description">{{ $product->description }}</textarea>
+        <input type="text" name="description" value="{{ $product->description }}">
         <label>Price:</label>
         <input type="text" name="price" value="{{ $product->price }}">
         <label>Stock:</label>
