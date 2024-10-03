@@ -16,6 +16,8 @@
             <th>Description</th>
             <th>Price</th>
             <th>Stock</th>
+            <th>Min Stock</th>
+            <th>Notification</th>
             <th>Actions</th>
         </tr>
         @foreach ($products as $product)
@@ -25,6 +27,12 @@
                 <td>{{ $product->description }}</td>
                 <td>{{ $product->price }}</td>
                 <td>{{ $product->stock }}</td>
+                <td>{{ $product->min_stock }}</td>
+                <td>
+                    @if ($product->stock <= $product->min_stock)
+                        Low stock
+                    @endif
+                </td>
                 <td>
                     <a href="{{ route('products.show', $product->id) }}">Show</a>
                     <a href="{{ route('products.edit', $product->id) }}">Edit</a>
