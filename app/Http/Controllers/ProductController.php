@@ -21,11 +21,13 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'description' => 'nullable|string',
             'price' => 'required|numeric',
             'stock' => 'required|integer',
         ]);
 
         Product::create($request->all());
+
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
     }
 
