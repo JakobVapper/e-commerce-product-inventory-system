@@ -34,7 +34,6 @@
                     @endif
                 </td>
                 <td>
-                    <a href="{{ route('products.show', $product->id) }}">Show</a>
                     <a href="{{ route('products.edit', $product->id) }}">Edit</a>
                     <form action="{{ route('products.destroy', $product->id) }}" method="POST" style="display:inline;">
                         @csrf
