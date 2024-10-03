@@ -25,7 +25,7 @@
         <input type="text" name="price" value="{{ old('price') }}">
         <label>Stock:</label>
         <input type="text" name="stock" value="{{ old('stock') }}">
-        <label>Minimum Stock:</label>
+        <label>Min Stock:</label>
         <input type="text" name="min_stock" value="{{ old('min_stock') }}">
         <button type="submit">Create</button>
     </form>
