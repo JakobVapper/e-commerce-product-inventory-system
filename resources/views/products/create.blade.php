@@ -19,7 +19,7 @@
         <label>Name:</label>
         <input type="text" name="name" value="{{ old('name') }}">
         <label>Description:</label>
-        <textarea name="description">{{ old('description') }}</textarea>
+        <input name="description" value="{{ old('description') }}">
         <label>Price:</label>
         <input type="text" name="price" value="{{ old('price') }}">
         <label>Stock:</label>
