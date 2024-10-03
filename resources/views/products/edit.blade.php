@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Edit Product</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
     <h1>Edit Product</h1>
