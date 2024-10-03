@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create Product</title>
+    <title>Create Category</title>
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1>Create Product</h1>
+    <h1>Create Category</h1>
     @if ($errors->any())
         <div>
             <ul>
@@ -15,27 +15,10 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('products.store') }}" method="POST">
+    <form action="{{ route('categories.store') }}" method="POST">
         @csrf
         <label>Name:</label>
         <input type="text" name="name" value="{{ old('name') }}">
-        <label>Description:</label>
-        <input type="text" name="description" value="{{ old('description') }}">
-        <label>Price:</label>
-        <input type="text" name="price" value="{{ old('price') }}">
-        <label>Category:</label>
-        <select name="category_id">
-            <option value="">Select Category</option>
-            @foreach ($categories as $category)
-                <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
-                    {{ $category->name }}
-                </option>
-            @endforeach
-        </select>
-        <label>Stock:</label>
-        <input type="text" name="stock" value="{{ old('stock') }}">
-        <label>Min Stock:</label>
-        <input type="text" name="min_stock" value="{{ old('min_stock') }}">
         <button type="submit">Create</button>
     </form>
 </body>
