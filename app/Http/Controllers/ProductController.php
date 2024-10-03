@@ -24,6 +24,7 @@ class ProductController extends Controller
             'description' => 'nullable|string',
             'price' => 'required|numeric',
             'stock' => 'required|integer',
+            'min_stock' => 'required|integer',
         ]);
 
         Product::create($request->all());
