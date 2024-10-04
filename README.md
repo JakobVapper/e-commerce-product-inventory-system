@@ -13,6 +13,7 @@
 * Otto Nuum - TAK-22
 * Kevin Jašin - TAK-22
 * Jakob Vapper - TAK-22
+* Kristo Lember - TA-23
 ## Dokumentatsioon
 Projekti Wiki annab täpse ülevaate tööprotsessist, kasutatud tööriistadest ja tööjaotusest
 * https://github.com/JakobVapper/e-commerce-product-inventory-system/wiki
