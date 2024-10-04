@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<section class="px-16 pt-10 pb-6 w-full leading-none text-black rounded-3xl bg-slate-100 max-md:px-5 max-md:max-w-full">
     <title>Create Product</title>
-    </section>
     @vite('resources/css/app.css')
 </head>
 <body>
+<section class="px-16 pt-10 pb-6 w-full leading-none text-black rounded-3xl bg-slate-100 max-md:px-5 max-md:max-w-full">
     <h1>Create Product</h1>
+    </section>
     @if ($errors->any())
         <div>
             <ul>
